@@ -35,7 +35,7 @@ struct WeatherManager {
             //3. Give the session a task
             let task = session.dataTask(with: url) { data, response, error in
                 if error != nil  {
-                    self.delegate?.didFailWithErrot(error: error)
+                    self.delegate?.didFailWithErrot(error: error!)
                     return
                 }
                 
